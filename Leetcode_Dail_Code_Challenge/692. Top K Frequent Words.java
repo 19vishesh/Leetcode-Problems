@@ -53,9 +53,8 @@ class Solution {
     {
         for (Map.Entry<K, V> entry: map.entrySet())
         {
-            if (value.equals(entry.getValue())) {
-                return entry.getKey();
-            }
+            if (value.equals(entry.getValue())) 
+                return entry.getKey();            
         }
         return null;
     }
