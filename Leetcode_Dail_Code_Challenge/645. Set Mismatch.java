@@ -30,15 +30,17 @@ class Solution {
             map.put(var, map.getOrDefault(var, 0)+1);       
         
         for(int var : map.keySet()){
-            if(map.get(var)==2)
-                res[0] = var;
+            if(map.get(var)==2){
+                res[0] = var; break;
+            }
         }
         // int repeatedElmt = getkey(map, 2);
         // res[0] = repeatedElmt;
         
         for(int i=1; i<=nums.length; i++){
-            if(!map.containsKey(i))
-                res[1] = i;
+            if(!map.containsKey(i)){
+                res[1] = i; break;
+            }
         }
         
         return res;
